@@ -5,7 +5,7 @@
       <hr>
     </div>
   </div>
-
+<!--interpolation binding-->
   <div class="row">
     <div class="col-md-12">
       <h3>1.Interpolation data binding</h3> 
@@ -19,9 +19,21 @@
        Condition Statement ={{addition() < 1 ? "Okayy" : "Good"}}
        <!--Only use ternary operator-->
        <!--We cant use here other statement like for, while , if loops-->
-     </div>
-      <hr>
-    </div>
-  </div>
-
-</div>
+        </div>
+      </div>
+   </div>
+    <hr> 
+  <!--Data Binding-->
+     
+        <div class="row">
+          <div class="col-md-12">
+              <h3>2.Property binding </h3>
+              <div [style.border]="'1px solid red'"> <input type="{{iptype}}" value="Okayy"></div>
+            
+              <div [style.border]="border"><input [type]="iptype" value = "Oky">  </div>
+          </div>
+        </div> 
+       </div>
+ <hr>
+<!--Custum attribute or own property -->
+  <div><app-is Add="'In Pune'"> </app-is></div>

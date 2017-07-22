@@ -7,6 +7,9 @@ import { MasterComponent } from './master/master.component';
 import { OneComponent } from './master/one.component';
 import { TwoComponent } from './master/two.component';
 import { DatabindingComponent } from './databinding/databinding.component';
+import { IsComponent } from './databinding/is.component';
+import { AndroidComponent } from './android/android.component';
+import { ThingsComponent } from './android/things.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { DatabindingComponent } from './databinding/databinding.component';
     MasterComponent,
     OneComponent,
     TwoComponent,
-    DatabindingComponent
+    DatabindingComponent,
+    IsComponent,
+    AndroidComponent,
+    ThingsComponent
   ],
   imports: [
     BrowserModule

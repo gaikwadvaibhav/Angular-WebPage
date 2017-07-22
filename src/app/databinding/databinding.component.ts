@@ -8,10 +8,14 @@ import { Component  } from '@angular/core';
 export class DatabindingComponent  {
 
 componentName : string;
+iptype : string;
+border : string;
 
   constructor() {
     this.componentName = "Android"
-   }
+   this.iptype = "Button"
+   this.border = '1px solid green' 
+  }
 
    addition(){
      return 2+2;
