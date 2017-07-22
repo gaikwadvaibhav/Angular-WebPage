@@ -20,8 +20,10 @@ export class IsComponent implements OnInit {
 
 @Input("Add")
 Address:string;
+ 
 
-  constructor() { }
+  constructor() {
+    }
 
   ngOnInit() {
   }

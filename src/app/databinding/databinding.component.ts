@@ -10,15 +10,24 @@ export class DatabindingComponent  {
 componentName : string;
 iptype : string;
 border : string;
+dynawd: string = "200px";
+outdata : string;
 
   constructor() {
     this.componentName = "Android"
    this.iptype = "Button"
-   this.border = '1px solid green' 
+   this.border = '1px solid red' 
   }
 
    addition(){
      return 2+2;
    }
- 
+ changeBorder(){
+   this.border  = '1px solid green' 
+  }
+
+mydata(dt: string){
+  this.outdata =dt;
+}
+
 }

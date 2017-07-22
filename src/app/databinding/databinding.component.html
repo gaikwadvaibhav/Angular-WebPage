@@ -28,12 +28,44 @@
         <div class="row">
           <div class="col-md-12">
               <h3>2.Property binding </h3>
-              <div [style.border]="'1px solid red'"> <input type="{{iptype}}" value="Okayy"></div>
+
+               <div  > <input type="{{iptype}}" value="Okayy"></div> <br>
+
+              <div [style.border]="'1px solid red'"> <input type="{{iptype}}" value="Ohhkayy"></div><br>
             
-              <div [style.border]="border"><input [type]="iptype" value = "Oky">  </div>
+              <div [style.border]="border"><input [type]="iptype" value = "Oky">  </div> 
+                    <h4> Event Binding </h4>
+                      <div><input type="Button" value ="PlayColor" (click)="changeBorder()"> <= Event Binding</div>  
+
+
           </div>
         </div> 
        </div>
+
+ 
+  
+       
  <hr>
+
 <!--Custum attribute or own property -->
   <div><app-is Add="'In Pune'"> </app-is></div>
+  
+<!--************-->
+
+<!--Event Binding-->
+<!--<div class="row">
+  <div class="container">
+    <h2> Event Binding </h2>
+    <div><input type="Button" value ="PlayColor" (click)="changeBorder()"> </div>  
+    <div> <input type="text" [style.width]="dynawd" (mouseenter)="dynawd='300px'" (mouseleave )="dynawd='200px'"> </div>
+  </div>
+</div>-->
+<hr>
+<div class="container">
+<div>
+  <h2>Event Binding </h2>
+  <app-op (ommiter) = "mydata($event)"> </app-op>
+  Today's  Date is => {{outdata}}  
+</div>
+</div>
+<hr>  
