@@ -11,6 +11,8 @@ import { IsComponent } from './databinding/is.component';
 import { AndroidComponent } from './android/android.component';
 import { ThingsComponent } from './android/things.component';
 import { OpComponent } from './databinding/op/op.component';
+import { FormerComponent } from './databinding/former.component';
+import { GrasperComponent } from './databinding/grasper.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { OpComponent } from './databinding/op/op.component';
     IsComponent,
     AndroidComponent,
     ThingsComponent,
-    OpComponent
+    OpComponent,
+    FormerComponent,
+    GrasperComponent
   ],
   imports: [
     BrowserModule

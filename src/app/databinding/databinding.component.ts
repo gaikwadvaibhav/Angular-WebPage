@@ -12,6 +12,7 @@ iptype : string;
 border : string;
 dynawd: string = "200px";
 outdata : string;
+control : Control; 
 
   constructor() {
     this.componentName = "Android"
@@ -29,5 +30,10 @@ outdata : string;
 mydata(dt: string){
   this.outdata =dt;
 }
+ 
+}
 
+export class Control{
+control : string;
+val : string;
 }
