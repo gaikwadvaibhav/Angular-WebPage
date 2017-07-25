@@ -4,12 +4,13 @@
   <h3>  Attribute directives</h3>
   </div>  
   <div>
-    <input type="text" [ngStyle]="{'border=':'1px solid red'}"> 
+    <input type="text" [ngStyle]="{'border=':'1px solid '+ textColor }"> 
   </div>
-  <div [ngClass]="{ well : isWell }">
+  <div [ngClass] ="{ well : isWell }">
     Codekul Bitcoin 
+     <input type="text" [(ngModel)]="textColor"/>
   </div>
-  
+
   <input type="button" value="Toggle" (click)="isWell = !isWell"/>
 </div>
 </div>
