@@ -11,6 +11,17 @@ export class DirectiveComponent implements OnInit, OnChanges  {
 
 textColor : string;
 fullColor : string;
+
+
+  mobiles = [
+    'Android',
+    'Ios',
+    'Windows',
+    'Ubuntu',
+    'RiM'
+  ];
+
+
   constructor() { }
 
   ngOnInit() {
