@@ -1,0 +1,15 @@
+<div class="container"> 
+<div class="row"> 
+  <div class="col-md-12"> 
+  <h3>  Attribute directives</h3>
+  </div>  
+  <div>
+    <input type="text" [ngStyle]="{'border=':'1px solid red'}"> 
+  </div>
+  <div [ngClass]="{ well : isWell }">
+    Codekul Bitcoin 
+  </div>
+  
+  <input type="button" value="Toggle" (click)="isWell = !isWell"/>
+</div>
+</div>

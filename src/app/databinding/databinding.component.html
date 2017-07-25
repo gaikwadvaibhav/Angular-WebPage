@@ -21,6 +21,8 @@
        <!--We cant use here other statement like for, while , if loops-->
         </div>
       </div>
+          
+
    </div>
     <hr> 
   <!--Data Binding-->
@@ -31,23 +33,20 @@
 
                <div  > <input type="{{iptype}}" value="Okayy"></div> <br>
 
-              <div [style.border]="'1px solid red'"> <input type="{{iptype}}" value="Ohhkayy"></div><br>
+               <div [style.border]="'1px solid red'"> <input type="{{iptype}}" value="Ohhkayy"></div><br>
             
-              <div [style.border]="border"><input [type]="iptype" value = "Oky">  </div> 
+               <div [style.border]="border"><input [type]="iptype" value = "Oky">  </div> 
                     <h4> Event Binding </h4>
-                      <div><input type="Button" value ="PlayColor" (click)="changeBorder()"> <= Event Binding</div>  
-
-
+               <div><input type="Button" value ="PlayColor" (click)="changeBorder()"> <= Event Binding</div>  
           </div>
         </div> 
-       </div>
-
+      </div>
  
-  
        
  <hr>
 
 <!--Custum attribute or own property in own component -->
+
   <div><app-is Add="'In Pune'"> </app-is></div>
   
 <!--************-->
@@ -79,3 +78,5 @@
       <app-grasper [ipCtl]="control"> </app-grasper>
     </div>
 </div> 
+
+ <hr>

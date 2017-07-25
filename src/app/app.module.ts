@@ -13,6 +13,7 @@ import { ThingsComponent } from './android/things.component';
 import { OpComponent } from './databinding/op/op.component';
 import { FormerComponent } from './databinding/former.component';
 import { GrasperComponent } from './databinding/grasper.component';
+import { DirectiveComponent } from './directive/directive.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { GrasperComponent } from './databinding/grasper.component';
     ThingsComponent,
     OpComponent,
     FormerComponent,
-    GrasperComponent
+    GrasperComponent,
+    DirectiveComponent
   ],
   imports: [
     BrowserModule
